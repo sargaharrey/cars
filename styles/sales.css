@@ -1,0 +1,101 @@
+body, html {
+    height: auto;  
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+nav {
+    flex: 0 0 auto; 
+    text-align: right; /* This ensures navbar doesn't grow or shrink and takes only required space */
+}
+.dropdown-item{
+    text-align: right!important;
+}
+.image-grid div {
+    width: 25%;
+    height: 240px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    flex: 1 0 auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-wrapper {
+    flex: 1; /* Allows this div to take up all the remaining space below the navbar */
+    background: #eee;
+    display: flex; /* Flex is set so that its children can be centered both vertically and horizontally */
+    justify-content: center; /* Center children horizontally */
+    align-items: center; /* Center children vertically */
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;  
+}
+
+
+.transparent-container { 
+   
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 85%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+  }
+
+.image-grid {
+    max-width: 100%;
+    width: 100%; /* ensure it takes full available width up to the max width */
+    margin: 20px 0; /* add some vertical space around the grid */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* this centers the child divs inside the flex container */
+}
+
+.site-logo {
+    width: 50px;
+    height: auto;
+    margin-left: 5px;
+}
+
+.image01 { background-image: url('./../images/1.jpg'); }
+.image02 { background-image: url('./../images/2.jpg'); }
+.image03 { background-image: url('./../images/3.jpg'); }
+.image04 { background-image: url('./../images/4.jpg'); }
+.image05 { background-image: url('./../images/5.jpg'); }
+.image06 { background-image: url('./../images/6.jpg'); }
+
+
+@media screen and (max-width: 400px) {
+    .image-grid {
+        flex-direction: column;
+        flex-wrap: no-wrap;
+    }
+    .image-grid div { 
+        width: 100%; 
+    }
+}
+
+.custom-card {
+    border: none; /* This line removes the border */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    text-align: right;
+}
+
+.custom-card:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.right-items {
+    margin-right: 20px; /* Adjust this value as needed */
+}
