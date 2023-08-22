@@ -101,27 +101,6 @@ nav {
     transition: opacity 0.3s; /* Smooth transition */
 }
 
-/* The overlay with car price */
-.image-popup::after {
-    content: attr(data-price); /* Fetch price from data attribute */
-    position: absolute;
-    bottom: 10%; /* Adjust as needed */
-    left: 0;
-    width: 100%;
-    text-align: center;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 10px 0;
-    border-radius: 5px;
-    font-size: 16px;
-    opacity: 0;
-    transition: opacity 0.3s; /* Smooth transition */
-}
-
-/* Hover effect to show overlays */
-.image-popup:hover::before, .image-popup:hover::after {
-    opacity: 1;
-}
 
 
 
