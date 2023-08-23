@@ -77,12 +77,12 @@ nav {
         gap: 20px; 
     }
 
-    .image01 { background-image: url('../images/1.jpg'); }
-    .image02 { background-image: url('../images/2.jpg'); }
-    .image03 { background-image: url('../images/3.jpg'); }
-    .image04 { background-image: url('../images/4.jpg'); }
-    .image05 { background-image: url('../images/5.jpg'); }
-    .image06 { background-image: url('../images/6.jpg'); }
+    .image01 { background-image: url('../images/sales1.jpg'); }
+    .image02 { background-image: url('../images/sales2.jpg'); }
+    .image03 { background-image: url('../images/sales3.jpg'); }
+    .image04 { background-image: url('../images/sales4.jpg'); }
+    .image05 { background-image: url('../images/sales5.jpg'); }
+    .image06 { background-image: url('../images/sales2.jpg'); }
 /* The overlay with car name */
 .image-popup::before {
     content: attr(data-name); /* Fetch car name from data attribute */
